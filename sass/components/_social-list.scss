@@ -1,0 +1,27 @@
+// .social-list {
+//     display: flex;
+//     justify-content: center;
+//     column-gap: 10px;
+// }
+
+// .social-list__icon {
+//     width: 20px;
+//     height: 20px;
+// }
+
+// .social-list__link {
+//     @extend %align;
+//     height: 44px;
+//     width: 44px;
+//     border-radius: 50%;
+//     fill: var(--global-color);
+
+//     transition: background-color var(--animation),
+//         fill var(--animation);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--logo-blue);
+//         fill: var(--global-color);
+//     }
+// }

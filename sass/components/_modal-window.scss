@@ -1,0 +1,31 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: var(--global-color);
+
+    padding: 40px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+
+    @extend %align;
+    padding: 0;
+
+    transition: fill var(--animation);
+
+    &:hover {
+        fill: var(--logo-blue);
+    }
+}

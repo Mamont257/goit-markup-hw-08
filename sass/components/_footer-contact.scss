@@ -1,0 +1,42 @@
+.adress__menu {
+    width: 231px;
+}
+
+.adress__in-map {
+    @include font($fs: 14px, $lh: 24px);
+    letter-spacing: 0.03em;
+    font-style: normal;
+
+    color: var(--text-color-while);
+
+    transition: color var(--animation);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue);
+} 
+}
+
+.adress__contact {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--animation);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue);
+}    
+}
+
+.adress__item {
+    margin-bottom: 9px;
+
+&:last-child {
+    margin-bottom: 0px;
+}    
+}

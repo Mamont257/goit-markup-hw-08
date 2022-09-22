@@ -1,0 +1,35 @@
+// .page-header {
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+//     border-bottom: 1px solid #ECECEC;
+// }
+
+// .page-header-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// .contact {
+//     display: flex;
+//     column-gap: 50px;
+// }
+
+.mobile-menu-btn{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ECECEC;
+}

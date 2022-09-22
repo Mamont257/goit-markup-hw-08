@@ -1,0 +1,19 @@
+ .logo {
+    @include font(700, 26px, 31px);
+    color: var(--logo-black);
+    font-family: var(--secondary-font);
+    letter-spacing: 0.03em;
+
+    margin-right: 93px;
+
+.logo__icon {
+    color: var(--logo-blue);
+}    
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    color: var(--text-color-while);
+}

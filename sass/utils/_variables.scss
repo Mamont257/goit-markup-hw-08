@@ -1,0 +1,28 @@
+/* Основний колір логотипу - #000000 */
+/* Допоміжний колір логотипу - #2196F3 */
+/* Основний колір шрифту - #212121 */
+/* Допоміжний колір шрифту - #757575 */
+
+/* Основний колір фону - #F5F5F5 */
+/* Допоміжний колір - #F5F4FA */
+/* Колір футера - #2F303A */
+
+
+:root {
+    --logo-blue: #2196F3;
+    --logo-black: #000000;
+    --global-color: #ffffff;
+    --secong-color: #F5F4FA;
+    --futter-color: #2F303A;
+    --text-color: #212121;
+    --second-text-color: #757575;
+    --text-color-while: #ffffff;
+    --icon-color: #AFB1B8;
+    --bg-color: #C4C4C4;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}

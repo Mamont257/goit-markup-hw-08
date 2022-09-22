@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* outline: 1px solid red; */
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    /* outline:  1px solid red; */
+}
+
+section {
+    /* outline: 2px solid green;   /////////// */
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+body {
+    background-color: var(--global-color);
+    font-family: var(--primary-font);
+    margin: 0px;
+}
