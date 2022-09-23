@@ -43,3 +43,18 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .contact__link {
+        @include font(500, 34px, 40px);
+        letter-spacing: 0.02em;
+        color: var(--second-text-color);
+
+        transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-blue);
+    }        
+    }
+}

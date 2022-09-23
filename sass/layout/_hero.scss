@@ -1,4 +1,4 @@
-// .hero {
+.hero {
 //     margin: 0px;
 //     padding-top: 200px;
 //     padding-bottom: 200px;
@@ -14,7 +14,20 @@
 //     background-size: cover;
 //     max-width: 1600px;
 //     margin: 0 auto;
-// }
+        @media screen and (max-width: 480px) {
+            margin: 0px;
+            // padding-top: 200px;
+            // padding-bottom: 200px;
+            max-width: 480px;
+            min-height: 400px;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(/Images/Phone/phone-Hero.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 480px 400px;
+            margin: 0 auto;
+        }
+}
 
 // .hero__title {
 //     font-weight: 900;
@@ -32,29 +45,29 @@
 //     margin-right: auto;
 // }
 
-// .hero__btn {
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.88;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     font-family: inherit;
+.hero__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: inherit;
 
-//     background-color: var(--logo-blue);
-//     color: var(--text-color-while);
-//     cursor: pointer;
+    background-color: var(--logo-blue);
+    color: var(--text-color-while);
+    cursor: pointer;
 
-//     border-radius: 4px;
-//     padding: 10px 32px;
-//     display: inline-block;
-//     min-width: 216px;
-//     border: transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 216px;
+    border: transparent;
 
-//     transition: background-color var(--animation);
+    transition: background-color var(--animation);
 
-// &:hover,
-// &:focus {
-//     background-color: #188CE8;
-// }   
+&:hover,
+&:focus {
+    background-color: #188CE8;
+}   
 
-// }
+}

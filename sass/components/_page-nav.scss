@@ -40,8 +40,22 @@
 // }    
 // }
 @media screen and (max-width: 767px) {
-    .menu {
+    .page-header__menu {
     display: none;
 }
+}
 
+@media screen and (max-width: 767px) {
+    .menu__link {
+        @include font(500, 40px, 47px);
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        position: relative;
+        transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-blue);
+    }    
+    }
 }
