@@ -4,9 +4,9 @@
     font-family: var(--secondary-font);
     letter-spacing: 0.03em;
 
-    margin-right: 93px;
+    margin-right: 87px;
 
-.logo__icon {
+    .logo__icon {
     color: var(--logo-blue);
 }    
 }
@@ -16,4 +16,11 @@
     margin-bottom: 20px;
     margin-right: 0px;
     color: var(--text-color-while);
+}
+
+@media screen and (min-width: 1200px){
+    .logo {
+        margin-right: 92px;
+    }
+    
 }

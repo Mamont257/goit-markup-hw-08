@@ -48,18 +48,12 @@ h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  /* outline: 1px solid red; */
 }
 
 ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  /* outline:  1px solid red; */
-}
-
-section {
-  /* outline: 2px solid green;   /////////// */
 }
 
 button {
@@ -100,12 +94,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1600px;
+    max-width: 1200px;
   }
 }
 .mobile-menu-btn {
@@ -113,6 +107,11 @@ body {
   background-color: transparent;
   padding: 0;
   line-height: 0;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
 }
 
 .page-header-container {
@@ -127,6 +126,18 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+  }
+}
 .mobile-list {
   position: fixed;
   top: 0;
@@ -153,8 +164,21 @@ body {
   padding-bottom: 302px;
 }
 
-.menu__item:not(:last-child) {
+.mobile-list__menu-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-list__menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  position: relative;
+  transition: color var(--animation);
+}
+.mobile-list__menu-link:hover, .mobile-list__menu-link:focus {
+  color: var(--logo-blue);
 }
 
 .mobile-list__container {
@@ -238,7 +262,7 @@ body {
   color: var(--logo-black);
   font-family: var(--secondary-font);
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  margin-right: 87px;
 }
 .logo .logo__icon {
   color: var(--logo-blue);
@@ -251,56 +275,101 @@ body {
   color: var(--text-color-while);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 92px;
+  }
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  column-gap: 54px;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 32px;
+  transition: color var(--animation);
+}
+.menu__link:hover, .menu__link:focus {
+  color: var(--logo-blue);
+}
+
+.menu__link_carrent {
+  color: var(--logo-blue);
+}
+.menu__link_carrent::after {
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--logo-blue);
+  border-radius: 2px;
+  content: "";
+}
+
 @media screen and (max-width: 767px) {
-  .page-header__menu {
+  .menu {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .menu__link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    position: relative;
-    transition: color var(--animation);
+@media screen and (min-width: 1200px) {
+  .menu {
+    column-gap: 50px;
   }
-  .menu__link:hover, .menu__link:focus {
-    color: var(--logo-blue);
+  .menu__link_carrent::after {
+    border: 0;
   }
 }
-/* .mail::before {
-    width: 16px;
-    height: 12px;
-    content: url(../images/envelope.svg);
-    /* content: url(../images/icons.svg#icon-envelope);     Нерозумію чому не працює */
-/* background-image: url(../images/icons.svg#icon-enverlope);
-    margin-right: 10px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.telephone::before {
-    width: 10px;
-    height: 16px;
-    content: url(../images/smartphone.svg);
-    margin-right: 10px;
-} */
+.contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  display: flex;
+  align-items: center;
+  fill: var(--second-text-color);
+  transition: color var(--animation), fill var(--animation);
+}
+.contact__link:hover, .contact__link:focus {
+  color: var(--logo-blue);
+  fill: var(--logo-blue);
+}
+
+.contact__icon {
+  margin-right: 8px;
+}
+
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .contact__link {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.1764705882;
-    letter-spacing: 0.02em;
-    color: var(--second-text-color);
-    transition: color var(--animation);
+@media screen and (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    gap: 30px;
   }
-  .contact__link:hover, .contact__link:focus {
-    color: var(--logo-blue);
+  .contact__icon {
+    margin-right: 10px;
   }
 }
 .title {
@@ -594,23 +663,74 @@ body {
   column-gap: 10px;
 }
 
-@media screen and (max-width: 480px) {
+.hero {
+  margin: 0px;
+  max-width: 480px;
+  height: 400px;
+  text-align: center;
+  background-color: var(--bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Phone/phone-Hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    margin: 0px;
-    max-width: 480px;
-    min-height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Phone/phone-Hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 480px 400px;
-    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Phone/phone-Hero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Tablet/tablet-Hero.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Tablet/tablet-Hero@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Desktop/desktop-Hero.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/Images/Desktop/desktop-Hero@2x.jpg);
+  }
+}
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color-while);
+  margin-bottom: 30px;
+  padding-top: 118px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    max-width: 696px;
+    padding-top: 200px;
   }
 }
 
 .hero__btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
   font-family: inherit;
@@ -618,14 +738,20 @@ body {
   color: var(--text-color-while);
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   display: inline-block;
-  min-width: 216px;
+  min-width: 200px;
   border: transparent;
   transition: background-color var(--animation);
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    padding: 10px 32px;
+    min-width: 216px;
+  }
 }
 
 .about-us {
@@ -660,6 +786,29 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-us__text {
+    padding-bottom: 0;
+  }
+  .about-us__menu {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-us__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  .about-us__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .we-doing {
   padding-bottom: 94px;
 }

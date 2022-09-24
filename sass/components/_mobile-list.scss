@@ -28,8 +28,21 @@
     padding-bottom: 302px;
 }
 
-.menu__item:not(:last-child) {
+.mobile-list__menu-item:not(:last-child) {
     margin-bottom: 32px;
+}
+
+.mobile-list__menu-link{
+    @include font(500, 40px, 47px);
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    position: relative;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-blue);
+    }
 }
 
 .mobile-list__container {

@@ -1,42 +1,32 @@
-// .contact__link {
-//     @include font(500, 14px, 16px);
-//     letter-spacing: 0.02em;
-//     color: var(--second-text-color);
-
-//     display: flex;
-//     align-items: center;
-
-//     fill: var(--second-text-color);
-
-//     transition: color var(--animation),
-//         fill var(--animation);
-
-// &:hover,
-// &:focus {
-//     color: var(--logo-blue);
-//     fill: var(--logo-blue);
-// }        
-// }
-
-// .contact__icon {
-//     margin-right: 10px;
-// }
-
-/* .mail::before {
-    width: 16px;
-    height: 12px;
-    content: url(../images/envelope.svg);
-    /* content: url(../images/icons.svg#icon-envelope);     Нерозумію чому не працює */
-/* background-image: url(../images/icons.svg#icon-enverlope);
-    margin-right: 10px;
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.telephone::before {
-    width: 10px;
-    height: 16px;
-    content: url(../images/smartphone.svg);
-    margin-right: 10px;
-} */
+
+.contact__link {
+    @include font(500, 14px, 16px);
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    display: flex;
+    align-items: center;
+    fill: var(--second-text-color);
+
+    transition: color var(--animation),
+    fill var(--animation);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue);
+    fill: var(--logo-blue);
+}        
+}
+
+.contact__icon {
+    margin-right: 8px;  //8px
+}
+
 
 @media screen and (max-width: 767px) {
     .contact {
@@ -44,17 +34,12 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .contact__link {
-        @include font(500, 34px, 40px);
-        letter-spacing: 0.02em;
-        color: var(--second-text-color);
-
-        transition: color var(--animation);
-
-    &:hover,
-    &:focus {
-        color: var(--logo-blue);
-    }        
+@media screen and (min-width: 1200px){
+    .contact {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .contact__icon {
+        margin-right: 10px;
     }
 }
