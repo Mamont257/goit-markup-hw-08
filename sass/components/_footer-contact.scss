@@ -1,5 +1,17 @@
+// .adress__menu {
+//     width: 231px;
+// }
+
+// .adress__item {
+//     margin-bottom: 9px;
+
+// &:last-child {
+//     margin-bottom: 0px;
+// }    
+// }
+
 .adress__menu {
-    width: 231px;
+    margin-bottom: 60px;
 }
 
 .adress__in-map {
@@ -34,9 +46,16 @@
 }
 
 .adress__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
 &:last-child {
     margin-bottom: 0px;
 }    
+}
+
+@media screen and (min-width: 768px){
+    .footer__adress-container {
+        margin-left: 76px;
+    }
+    
 }

@@ -1,3 +1,13 @@
+// .social-list__link-footer {                             //modeficator
+//     background-color: rgba(255, 255, 255, 0.1);
+//     transition: background-color var(--animation);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--logo-blue);
+//     }
+// }
+
 .social-list__link-footer {                             //modeficator
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--animation);
@@ -5,5 +15,15 @@
     &:hover,
     &:focus {
         background-color: var(--logo-blue);
+    }
+}
+
+.social-list__menu-footer{
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px){
+    .footer__social-link {
+        margin-right: 89px;
     }
 }
