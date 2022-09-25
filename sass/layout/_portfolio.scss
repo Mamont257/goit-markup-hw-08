@@ -1,15 +1,60 @@
+// .portfolio {
+//     padding-bottom: 94px;
+//     padding-top: 94px;
+// }
+
+// /*========== Блок навігації ==========*/
+// .portfolio__nav-menu {
+//     display: flex;
+//     margin-bottom: 50px;
+//     column-gap: 8px;
+//     justify-content: center;
+
+// }
+
+// .portfolio__nav-btn {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.63;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     font-family: inherit;
+
+//     background-color: var(--secong-color);
+//     color: var(--text-color);
+//     cursor: pointer;
+
+
+//     border-radius: 4px;
+//     border: transparent;
+//     padding: 6px 25px;
+//     min-width: 63px;
+
+//     transition: background-color var(--animation),
+//         color var(--animation),
+//         box-shadow var(--animation);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--logo-blue);
+//         color: var(--text-color-while);
+//         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+//             0px 1px 2px rgba(0, 0, 0, 0.08),
+//             0px 2px 2px rgba(0, 0, 0, 0.12);
+//         }
+// }
+
 .portfolio {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
-/*========== Блок навігації ==========*/
 .portfolio__nav-menu {
     display: flex;
-    margin-bottom: 50px;
     column-gap: 8px;
-    justify-content: center;
-
+    row-gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .portfolio__nav-btn {
@@ -44,6 +89,25 @@
         }
 }
 
+@media screen and (min-width: 768px) {
+    .portfolio__nav-menu {
+        row-gap: 0;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    .portfolio__nav-menu {
+        margin-bottom: 50px;
+    }
+    
+}
+
 
 /*========== Блок перелік макетів ==========*/
 
@@ -52,7 +116,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100% - 60px)/3);
+    justify-content: center;
+    // flex-basis: calc((100% - 60px)/3);
 }
 
 .portfolio__link {
@@ -129,4 +194,10 @@
     .portfolio__link:focus & {
         transform: translateY(0%);
         }
+}
+
+@media screen and (min-width: 768px){
+    .portfolio__menu {
+        flex-basis: calc((100% - 30px)/2);
+    }
 }

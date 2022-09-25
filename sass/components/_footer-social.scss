@@ -27,3 +27,12 @@
         margin-right: 89px;
     }
 }
+
+@media screen and (min-width: 1200px){
+    .footer__social-link {
+        margin-right: 0;
+    }
+    .social-list__menu-footer {
+        margin-bottom: 0px;
+    }
+}

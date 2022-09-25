@@ -19,9 +19,9 @@
         <div class="container page-header-container">
             <nav class="page-nav">
                 <a href="./index.html" class="logo link"> <span class="logo__icon">Web</span>Studio</a>
-                <ul class="menu page-header__menu list">
+                <ul class="menu list">
                     <li class="menu__item">
-                        <a class="menu__link link" href="./index.html">Студія</a>
+                        <a class="menu__link link " href="./index.html">Студія</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link link menu__link_carrent" href="./portfolio.html">Портфоліо</a>
@@ -33,18 +33,73 @@
             </nav>
             <ul class="contact list">
                 <li>
-                    <a class="contact__link link mail" href="mailto:info@devstudio.com">
+                    <a class="contact__link link" href="mailto:info@devstudio.com">
                         <svg class="contact__icon" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg> info@devstudio.com</a>
                 </li>
                 <li>
-                    <a class="contact__link link telephone" href="tel:+380961111111">
+                    <a class="contact__link link" href="tel:+380961111111">
                         <svg class="contact__icon" width="10px" height="16px">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40px" height="40px">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+    
+    
+        <div class="mobile-list" data-menu>
+            <div class="mobile-list__container">
+                <button type="button" class="mobile-list__close-btn" data-menu-close>
+                    <svg class="mobile-list__close-icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="p">
+                    <nav class="mobile-list__page-nav">
+                        <ul class="mobile-list__menu list">
+                            <li class="mobile-list__menu-item">
+                                <a class="mobile-list__menu-link link" href="./index.html">Студія</a>
+                            </li>
+                            <li class="mobile-list__menu-item">
+                                <a class="mobile-list__menu-link link" href="./portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="mobile-list__menu-item">
+                                <a class="mobile-list__menu-link link" href="">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="mobile-list__contact list">
+                        <li class="mobile-list__contact-item">
+                            <a class="mobile-list__contact-tel link" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-list__contact-item">
+                            <a class="mobile-list__contact-mail link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-list__social list">
+                        <li class="mobile-list__social-item">
+                            <a href="" class="mobile-list__social-link link">Instagram</a>
+                        </li>
+                        <li class="mobile-list__social-item">
+                            <a href="" class="mobile-list__social-link link">Twitter</a>
+                        </li>
+                        <li class="mobile-list__social-item">
+                            <a href="" class="mobile-list__social-link link">Facebook</a>
+                        </li>
+                        <li class="mobile-list__social-item">
+                            <a href="" class="mobile-list__social-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -67,7 +122,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Tehcriac.jpg" alt="Технокряк" width="370">
+                            <img class="portfolio__img" src="./Images/Phone/phone-Tehcriac.jpg" alt="Технокряк">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -83,7 +138,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                            <img class="portfolio__img" src="./Images/Phone/phone-Poster.jpg" alt="Постер New Orlean vs Golden Star">
                                  <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -98,7 +153,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Restoran.jpg" alt="Ресторан Seafood" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-Restoran.jpg" alt="Ресторан Seafood">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -113,7 +168,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Music.jpg" alt="Проєкт Prime" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-Music.jpg" alt="Проєкт Prime">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -128,7 +183,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Boxes.jpg" alt="Проєкт Boxes" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-Boxes.jpg" alt="Проєкт Boxes">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -143,7 +198,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Borders.jpg" alt="Inspiration has no Borders" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-Borders.jpg" alt="Inspiration has no Borders">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -158,7 +213,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Limited-edition.jpg" alt="Видання Limited Edition" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-Limited-edition.jpg" alt="Видання Limited Edition">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -173,7 +228,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/LAB.jpg" alt="Проєкт LAB" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-LAB.jpg" alt="Проєкт LAB">
                                 <p class="portfolio__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -188,7 +243,7 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__overley-zone">
-                            <img class="portfolio__img" src="./images/Growing-Business.jpg" alt="Growing Business" width="370">
+                            <img class="portfolio__img" src="./images/Phone/phone-Growing-Business.jpg" alt="Growing Business">
                                 <p class="portfolio__overlay">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.
@@ -211,71 +266,72 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <div>
-                <a href="./index.html" class="logo footer__logo link"> <span class="logo__icon">Web</span>Studio</a>
-                <address>
-                    <ul class="adress__menu list">
-                        <li class="adress__item">
-                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                rel="noopener noreferrer nofollow" class="adress__in-map link">
-                                м. Київ, пр-т Лесі Українки, 26</a>
+            <div class="footer__tablet-container">
+                <div class="footer__adress-container">
+                    <a href="./index.html" class="logo footer__logo link"> <span class="logo__icon">Web</span>Studio</a>
+                    <address class="adress">
+                        <ul class="adress__menu list">
+                            <li class="adress__item">
+                                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                    rel="noopener noreferrer nofollow" class="adress__in-map link">
+                                    м. Київ, пр-т Лесі Українки, 26</a>
+                            </li>
+                            <li class="adress__item">
+                                <a href="mailto:info@example.com" class="adress__contact link">info@example.com</a>
+                            </li>
+                            <li class="adress__item">
+                                <a href="tel:+380991111111" class="adress__contact link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__social-link">
+                    <p class="footer__title">Приєднуйтесь</p>
+                    <ul class="social-list list social-list__menu-footer">
+                        <li class="social-list__item-footer">
+                            <a href="" class="social-list__link social-list__link-footer">
+                                <svg aria-label="instagram icon" class="social-list__icon social-list__icon_while">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="adress__item">
-                            <a href="mailto:info@example.com" class="adress__contact link">info@example.com</a>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link social-list__link-footer">
+                                <svg aria-label="twitter icon" class="social-list__icon social-list__icon_while">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="adress__item">
-                            <a href="tel:+380991111111" class="adress__contact link">+38 099 111 11 11</a>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link social-list__link-footer">
+                                <svg aria-label="facebook icon" class="social-list__icon social-list__icon_while">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link social-list__link-footer">
+                                <svg aria-label="linkedin icon" class="social-list__icon social-list__icon_while">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__social-link">
-                <p class="footer__title">Приєднуйтесь</p>
-                <ul class="social-list list">
-                    <li class="social-list__item-footer">
-                        <a href="" class="social-list__link social-list__link-footer">
-                            <svg aria-label="instagram icon" class="social-list__icon social-list__icon_while">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link social-list__link-footer">
-                            <svg aria-label="twitter icon" class="social-list__icon social-list__icon_while">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link social-list__link-footer">
-                            <svg aria-label="facebook icon" class="social-list__icon social-list__icon_while">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link social-list__link-footer">
-                            <svg aria-label="linkedin icon" class="social-list__icon social-list__icon_while">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-                <div class="footer__submit">
-                    <p class="footer__title">Підпишіться на розсилку</p>
-                    <form class="form-short">
-                        <label>
-                        <input type="email" name="email" placeholder="E-mail" class="form-short__input" required>
-                        </label>
-                        <button type="submit" class="form-short__btn-submit">Підписатися
-                            <svg aria-label="Send icon" width="24px" height="24px" class="footer-send-icon">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </form>
                 </div>
-
+            </div>
+            <div class="footer__submit">
+                <p class="footer__title">Підпишіться на розсилку</p>
+                <form class="form-short">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail" class="form-short__input" required>
+                    </label>
+                    <button type="submit" class="form-short__btn-submit">Підписатися
+                        <svg aria-label="Send icon" width="24px" height="24px" class="footer-send-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 

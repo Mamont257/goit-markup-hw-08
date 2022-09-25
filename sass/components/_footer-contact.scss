@@ -1,6 +1,4 @@
-// .adress__menu {
-//     width: 231px;
-// }
+
 
 // .adress__item {
 //     margin-bottom: 9px;
@@ -56,6 +54,17 @@
 @media screen and (min-width: 768px){
     .footer__adress-container {
         margin-left: 76px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .footer__adress-container {
+        margin-left: 0;
+    }
+    .adress__menu {
+        margin-bottom: 0;
+        text-align: left;
     }
     
 }
