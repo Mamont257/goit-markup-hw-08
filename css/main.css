@@ -411,11 +411,15 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: auto;
   transform: translate(-50%, -50%);
   background-color: var(--global-color);
   padding: 40px;
+}
+
+.form {
+  width: 100%;
 }
 
 .modal-close-btn {
@@ -434,10 +438,15 @@ body {
   fill: var(--logo-blue);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -534,8 +543,8 @@ body {
 
 .form-checkbox__text-politic {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-text-color);
@@ -570,6 +579,18 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .form-checkbox__text-politic {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 /* .form-checkbox__input:focus + .form-checkbox__icon {
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.7);
 } */
@@ -772,7 +793,7 @@ body {
   height: 400px;
   text-align: center;
   background-color: var(--bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.../Images/Phone/phone-Hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Phone/phone-Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -780,31 +801,31 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./Images/Phone/phone-Hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Phone/phone-Hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./Images/Tablet/tablet-Hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Tablet/tablet-Hero.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./Images/Tablet/tablet-Hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Tablet/tablet-Hero@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./Images/Desktop/desktop-Hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Desktop/desktop-Hero.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./Images/Desktop/desktop-Hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Desktop/desktop-Hero@2x.jpg);
   }
 }
 .hero__title {
@@ -1129,11 +1150,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  align-content: stretch;
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--animation);
 }
 .portfolio__link:hover {
@@ -1147,6 +1170,7 @@ body {
   padding-right: 24px;
   padding-top: 20px;
   border-top: transparent;
+  flex-grow: 1;
 }
 
 .portfolio__ititle {
@@ -1187,7 +1211,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 65px 12px 61px 36px;
+  padding: 77px 24px;
   transform: translateY(101%);
   transition: transform var(--animation);
 }
@@ -1196,7 +1220,18 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio__menu {
-    flex-basis: calc((100% - 30px) / 2);
+  .portfolio__overlay {
+    padding: 49px 24px;
+  }
+  .portfolio__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay {
+    padding: 63px 24px;
+  }
+  .portfolio__item {
+    width: calc((100% - 60px) / 3);
   }
 }/*# sourceMappingURL=main.css.map */

@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
@@ -175,12 +174,19 @@
         <ul class="we-doing__menu list">
           <li class="we-doing__item">
             <div class="we-doing__img-fone">
-              <img
-                class="we-doing__img"
-                src="/Images/Desktop/desktop-work1.jpg"
-                alt="Людина пише програму"
-                width="370"
+            <picture>
+              <source
+                srcset="./Images/Desktop/desktop-work1.webp 1x, ./Images/Desktop/desktop-work1@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
               />
+              <source
+                srcset="./Images/Desktop/desktop-work1.jpg 1x, ./Images/Desktop/desktop-work1@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <img class="we-doing__img" src="/Images/Desktop/desktop-work1.jpg" alt="Людина пише програму" width="370" />
+            </picture>
               <p class="we-doing__img-text">
                 Десктопні додатки
               </p>
@@ -188,12 +194,20 @@
           </li>
           <li class="we-doing__item">
             <div class="we-doing__img-fone">
-              <img
-                class="we-doing__img"
-                src="/Images/Desktop/desktop-work2.jpg"
-                alt="Дівчина дивиться на телефон за робочим столом"
-                width="370"
+            <picture>
+              <source
+                srcset="./Images/Desktop/desktop-work2.webp 1x, ./Images/Desktop/desktop-work2@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
               />
+              <source
+                srcset="./Images/Desktop/desktop-work2.jpg 1x, ./Images/Desktop/desktop-work2@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <img class="we-doing__img" src="/Images/Desktop/desktop-work2.jpg" alt="Дівчина дивиться на телефон за робочим столом"
+                width="370" />
+            </picture>
               <p class="we-doing__img-text">
                 Мобільні додатки
               </p>
@@ -201,12 +215,18 @@
           </li>
           <li class="we-doing__item">
             <div class="we-doing__img-fone">
-              <img
-                class="we-doing__img"            
-                src="/Images/Desktop/desktop-work3.jpg"
-                alt="Планшет з палітрою кольорів"
-                width="370"
+              <picture>
+              <source
+                srcset="./Images/Desktop/desktop-work3.webp 1x, ./Images/Desktop/desktop-work3@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
               />
+              <source
+                srcset="./Images/Desktop/desktop-work3.jpg 1x, ./Images/Desktop/desktop-work3@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <img class="we-doing__img" src="/Images/Desktop/desktop-work3.jpg" alt="Планшет з палітрою кольорів" width="370" />
+            </picture>
               <p class="we-doing__img-text">
                 Дизайнерські рішення
               </p>
@@ -222,8 +242,39 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team__menu list">
           <li class="team__item">
-            <img class="team__img" src="./Images/Phone/phone-Igor.jpg" alt="Ігор Дем'яненко"/>
-            
+            <picture>
+              <source
+                srcset="./Images/Desktop/desktop-Igor.webp 1x, ./Images/Desktop/desktop-Igor@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./Images/Desktop/desktop-Igor.jpg 1x, ./Images/Desktop/desktop-Igor@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <source
+                srcset="./images/Tablet/tablet-Igor.webp 1x, ./images/Tablet/tablet-Igor@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Tablet/tablet-Igor.jpg 1x, ./images/Tablet/tablet-Igor@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="./images/Phone/phone-Igor.webp 1x, ./images/Phone/phone-Igor@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Phone/phone-Igor.jpg 1x, ./images/Phone/phone-Igor.jpg 2x"
+                media="(max-width: 767px)"
+              />
+
+              <img class="team__img" src="./Images/Phone/phone-Igor.jpg" alt="Ігор Дем'яненко" />
+            </picture>
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__job">Product Designer</p>
 
@@ -260,8 +311,39 @@
 
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/Phone/phone-Olga.jpg" alt="Ольга Рєпіна"/>
+            <picture>
+              <source
+                srcset="./Images/Desktop/desktop-Olga.webp 1x, ./Images/Desktop/desktop-Olga@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./Images/Desktop/desktop-Olga.jpg 1x, ./Images/Desktop/desktop-Olga@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
 
+              <source
+                srcset="./images/Tablet/tablet-Olga.webp 1x, ./images/Tablet/tablet-Olga@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Tablet/tablet-Olga.jpg 1x, ./images/Tablet/tablet-Olga@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="./images/Phone/phone-Olga.webp 1x, ./images/Phone/phone-Olga@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Phone/phone-Olga.jpg 1x, ./images/Phone/phone-Olga.jpg 2x"
+                media="(max-width: 767px)"
+              />
+
+              <img class="team__img" src="./images/Phone/phone-Olga.jpg" alt="Ольга Рєпіна" />
+            </picture>
             <h3 class="team__name">Ольга Рєпіна</h3>
             <p class="team__job">Frontend Developer</p>
 
@@ -298,8 +380,38 @@
 
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/Phone/phone-Mikola.jpg" alt="Микола Тарасов"/>
+            <picture>
+              <source
+                srcset="./Images/Desktop/desktop-Mikola.webp 1x, ./Images/Desktop/desktop-Mikola@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./Images/Desktop/desktop-Mikola.jpg 1x, ./Images/Desktop/desktop-Mikola@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
 
+              <source
+                srcset="./images/Tablet/tablet-Mikola.webp 1x, ./images/Tablet/tablet-Mikola@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Tablet/tablet-Mikola.jpg 1x, ./images/Tablet/tablet-Mikola@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="./images/Phone/phone-Mikola.webp 1x, ./images/Phone/phone-Mikola@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Phone/phone-Mikola.jpg 1x, ./images/Phone/phone-Mikola.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img class="team__img" src="./images/Phone/phone-Mikola.jpg" alt="Микола Тарасов" />
+            </picture>
             <h3 class="team__name">Микола Тарасов</h3>
             <p class="team__job">Marketing</p>
 
@@ -336,7 +448,38 @@
 
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/Phone/phone-Michaylo.jpg" alt="Михайло Єрмаков"/>
+            <picture>
+              <source
+                srcset="./Images/Desktop/desktop-Michaylo.webp 1x, ./Images/Desktop/desktop-Michaylo@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./Images/Desktop/desktop-Michaylo.jpg 1x, ./Images/Desktop/desktop-Michaylo@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <source
+                srcset="./images/Tablet/tablet-Michaylo.webp 1x, ./images/Tablet/tablet-Michaylo@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Tablet/tablet-Michaylo.jpg 1x, ./images/Tablet/tablet-Michaylo@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="./images/Phone/phone-Michaylo.webp 1x, ./images/Phone/phone-Michaylo@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Phone/phone-Michaylo.jpg 1x, ./images/Phone/phone-Michaylo.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img class="team__img" src="./images/Phone/phone-Michaylo.jpg" alt="Михайло Єрмаков" />
+            </picture>
 
             <h3 class="team__name">Михайло Єрмаков</h3>
             <p class="team__job">UI Designer</p>
@@ -506,7 +649,7 @@
 
 
     <!-- Модальне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
           <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
@@ -568,8 +711,10 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
+
+
     <script src="./js/menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

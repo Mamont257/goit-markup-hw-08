@@ -1,5 +1,6 @@
 .form__title {
-    @include font(700, 20px, 23px);
+    // @include font(700, 20px, 23px);
+    @include font(700, 20px, 30px);
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -99,7 +100,8 @@
 }
 
 .form-checkbox__text-politic {
-    @include font($fs: 14px, $lh: 24px);
+    // @include font($fs: 14px, $lh: 24px);
+    @include font(400, 12px, 14px);
     letter-spacing: 0.03em;
     text-align: center;
 
@@ -140,7 +142,14 @@
 }
 
 
-
+@media screen and (min-width: 1200px){
+    .form__title {
+        @include font(700, 20px, 23px);
+    }
+    .form-checkbox__text-politic {
+        @include font($fs: 14px, $lh: 24px);
+    }
+}
 
 /* .form-checkbox__input:focus + .form-checkbox__icon {
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.7);
