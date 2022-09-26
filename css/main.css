@@ -419,10 +419,6 @@ body {
   padding: 40px;
 }
 
-.form {
-  width: 100%;
-}
-
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -441,7 +437,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 .form__title {
@@ -561,8 +557,8 @@ body {
 }
 
 .form-checkbox__icon {
-  width: 16px;
-  height: 15px;
+  max-width: 16px;
+  max-height: 15px;
   border: 2px solid var(--text-color);
   border-radius: 2px;
   transition: background-color var(--animation), border-color var(--animation);

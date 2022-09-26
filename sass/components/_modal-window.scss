@@ -16,10 +16,6 @@
     // margin-right: auto;
 }
 
-.form {
-    width: 100%;
-    // padding: 40px;
-}
 
 .modal-close-btn {
     position: absolute;
@@ -43,6 +39,6 @@
 
 @media screen and (min-width: 1200px){
     .modal {
-        width: 528px;
+        max-width: 528px;
     }
 }

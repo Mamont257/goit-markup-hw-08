@@ -119,8 +119,8 @@
 }
 
 .form-checkbox__icon {
-    width: 16px;
-    height: 15px;
+    max-width: 16px;
+    max-height: 15px;
     border: 2px solid var(--text-color);
     border-radius: 2px;
 
