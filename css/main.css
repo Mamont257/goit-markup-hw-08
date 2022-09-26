@@ -588,9 +588,6 @@ body {
     line-height: 1.7142857143;
   }
 }
-/* .form-checkbox__input:focus + .form-checkbox__icon {
-    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.7);
-} */
 .footer {
   background-color: var(--futter-color);
   padding-top: 60px;
