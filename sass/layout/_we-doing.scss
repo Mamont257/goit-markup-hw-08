@@ -1,24 +1,12 @@
-// @media screen and (max-width: 1999px){
-//     .we-doing {
-//         display: none;
-//     }
-    
-// }
-
-
-
-
-
-
 @media screen and (min-width: 1200px){  
-    .we-doing {
-        padding-bottom: 94px;
-    }
+.we-doing {
+    padding-bottom: 94px;
+}
 
-    .we-doing__menu {
-        display: flex;
-        column-gap: 30px;
-    }
+.we-doing__menu {
+    display: flex;
+    column-gap: 30px;
+}
 
 .we-doing__item {
     flex-basis: calc((100% - 60px) /3);
