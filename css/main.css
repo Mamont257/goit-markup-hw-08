@@ -194,12 +194,10 @@ body {
   background-color: transparent;
   padding: 0;
   line-height: 0;
+  transition: fill var(--animation);
 }
-
-.p {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.mobile-list__close-btn:hover {
+  fill: var(--logo-blue);
 }
 
 .mobile-list__contact-item:not(:last-child) {

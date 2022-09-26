@@ -6,7 +6,6 @@
     height: 100%;
     z-index: 100;
     background-color: var(--global-color);
-
     transition: opacity var(--animation), visibility var(--animation);
 
     opacity: 0;
@@ -56,12 +55,12 @@
    background-color: transparent;
    padding: 0;
    line-height: 0; 
-}
 
-.p {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    transition: fill var(--animation);
+
+    &:hover {
+        fill: var(--logo-blue);
+    }
 }
 
 .mobile-list__contact-item:not(:last-child){
