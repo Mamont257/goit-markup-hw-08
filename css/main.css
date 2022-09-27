@@ -147,6 +147,7 @@ body {
   z-index: 100;
   background-color: var(--global-color);
   transition: opacity var(--animation), visibility var(--animation);
+  overflow: auto;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -181,6 +182,10 @@ body {
   color: var(--logo-blue);
 }
 
+.mobile-list__menu-link_current {
+  color: var(--logo-blue);
+}
+
 .mobile-list__container {
   position: relative;
   padding-left: 40px;
@@ -209,10 +214,6 @@ body {
   font-size: 34px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
-  transition: color var(--animation);
-}
-.mobile-list__contact-tel:hover, .mobile-list__contact-tel:focus {
   color: var(--logo-blue);
 }
 
@@ -230,6 +231,7 @@ body {
 
 .mobile-list__social {
   margin-top: 64px;
+  margin-bottom: 48px;
 }
 
 .mobile-list__social-item {
@@ -302,10 +304,10 @@ body {
   color: var(--logo-blue);
 }
 
-.menu__link_carrent {
+.menu__link_current {
   color: var(--logo-blue);
 }
-.menu__link_carrent::after {
+.menu__link_current::after {
   position: absolute;
   left: 0px;
   bottom: -3px;
@@ -780,12 +782,11 @@ body {
 }
 
 .hero {
-  margin: 0px;
   max-width: 480px;
   height: 400px;
   text-align: center;
   background-color: var(--bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Phone/phone-Hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/phone/phone-Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -905,6 +906,9 @@ body {
 @media screen and (min-width: 768px) {
   .about-us__text {
     padding-bottom: 0;
+  }
+  .about-us__title {
+    text-align: start;
   }
   .about-us__menu {
     display: flex;
